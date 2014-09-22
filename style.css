@@ -1,0 +1,246 @@
+body {
+	background: #333333;
+}
+
+.container {
+	display: block;
+	width:960px;
+	height: auto;
+	clear: both;
+	position: relative;
+	margin: 0 auto;
+}
+
+.graphic {
+	width: 250px;
+	padding: 20px;
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	margin-top: 30%;
+	box-sizing: border-box;
+}
+
+.head {
+	width: 200px;
+	height: 200px;
+	display: block;
+	border-radius: 100%;
+	background: #ffe8ea;
+	position: absolute;
+}
+
+/* === eyes, mouth, hovers === */
+
+.eye-lhs{
+	width: 40px;
+	height: 40px;
+	display: block;
+	border-radius: 100%;
+	background: #333333;
+	position: relative;
+	float:left;
+	top: 80px;
+	left: 20px;
+}
+
+.eye-rhs {
+	width: 40px;
+	height: 40px;
+	display: block;
+	border-radius: 100%;
+	background: #333333;
+	position: relative;
+	float: right;
+	top: 80px;
+	right: 20px;
+}
+
+.blink {
+	width: 40px;
+	height: 10px;
+	display: block;
+	border-radius: 0;
+	top:90px;
+}
+
+
+.mouth {
+	width: 40px;
+    height: 10px;
+    background: #333333;
+    position: relative;
+    top: 140px;
+	left: 110px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
+.head:hover > .eye-rhs {
+	width: 40px;
+	height: 10px;
+	display: block;
+	border-radius: 0;
+	top:90px;
+}
+
+.head:hover > .eye-lhs {
+	width: 40px;
+	height: 10px;
+	display: block;
+	border-radius: 0;
+	top:90px;
+}
+
+.head:hover > .mouth {
+	width: 20px;
+	height: 20px;
+	left: 120px;
+	border-radius: 100%;
+}
+
+/* === pixilated nerd-glasses === */
+
+.spectacle-lhs {
+	width: 80px;
+	height: 80px;
+	display: block;
+	border: 3px solid #333;
+	border-radius: 100%;
+	position: absolute;
+	top: 55px;
+	left: 0px;
+	z-index: 10;
+}
+
+.spectacle-mid {
+	width: 30px;
+	height: 5px;
+	display: block;
+	position: absolute;
+	background: #333;
+	top: 97px;
+	left: 84px;
+	z-index: 10;
+}
+
+.spectacle-rhs {
+	width: 80px;
+	height: 80px;
+	display: block;
+	border: 3px solid #333;
+	border-radius: 100%;
+	background: 0;
+	position: absolute;
+	top: 55px;
+	right: 0px;
+	z-index: 10;
+}
+
+/* === bad hair day === */
+
+.rect-1 {	
+	position: absolute;
+	width: 121px;
+	height: 28px;
+	background: #4d342b;
+	transform: skew(58deg,-36deg);
+	top: 5px;
+	right: 46px;
+	z-index: 2;
+	border-top: 1px solid white;
+	border-right: 2px solid white;
+}
+.rect-2 {
+	position: absolute;
+	width: 180px;
+	height: 45px;
+	background: #4d342b;
+	transform: rotate(61deg);
+	top: 39px;
+	right: -91px;
+	z-index: 2;
+}
+.rect-3 {
+	position: absolute;
+	width: 121px;
+	height: 23px;
+	background: #4d342b;
+	transform: skew(58deg,-50deg);
+	top: 25px;
+	right: 100px;
+	z-index: 2;
+	border-top: 2px solid #FFF;
+	border-bottom: 2px solid #333;
+	border-right: 2px solid #FFF;
+}
+.rect-4 {
+	position: absolute;
+	width: 142px;
+	height: 35px;
+	background: #4d342b;
+	transform: rotate(-60deg);
+	top: 25px;
+	right: 120px;
+	z-index: 2;
+	border-top: 3px solid white;
+	border-right: 3px solid white;
+}
+.rect-5 {
+	position: absolute;
+	width: 170px;
+	height: 50px;
+	background: #4d342b;
+	transform: rotate(-90deg);
+	top: 150px;
+	right: 112px;
+	z-index: -1;
+	border-top: 3px solid white;
+	border-right: 3px solid white;
+}
+.rect-6 {
+	position: absolute;
+	width: 250px;
+	height: 40px;
+	background: #4d342b;
+	transform: rotate(-90deg);
+	top: 200px;
+	right: 44px;
+	z-index: -1;
+	border-top: 3px solid #333;
+	border-right: 3px solid white;
+}
+.rect-7 {
+	position: absolute;
+	width: 190px;
+	height: 40px;
+	background: #4d342b;
+	transform: rotate(-90deg);
+	top: 200px;
+	right: 57px;
+	z-index: -1;
+	border-top: 3px solid #333;
+}
+.rect-8 {
+	position: absolute;
+	width: 250px;
+	height: 45px;
+	background: #4d342b;
+	transform: rotate(90deg);
+	top: 150px;
+	right: -130px;
+	z-index: -1;
+	border-top: 3px solid #333;
+}
+.rect-9 {
+	position: absolute;
+	width: 350px;
+	height: 32px;
+	background: #4d342b;
+	transform: rotate(90deg);
+	top: 150px;
+	right: -150px;
+	z-index: -1;
+	border-top: 3px solid #333;
+}
